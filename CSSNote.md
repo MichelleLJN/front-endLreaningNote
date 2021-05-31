@@ -122,7 +122,9 @@ content（内容）就是盒子里装的东西，padding（内边距）就是怕
 **水平导航栏**：
 display:inline; 
 <hr>
+CSS 变量经常会定义在  :root  元素内，这样就可被所有选择器继承。
 
+`:root`  是一个  pseudo-class  选择器匹配文档的根选择器，通常指  `html`  元素。
 
 <hr>
 
@@ -131,5 +133,5 @@ display:inline;
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NzA4MzI4MF19
+eyJoaXN0b3J5IjpbNTY4MjgyNzA4LDEwNzcwODMyODBdfQ==
 -->
