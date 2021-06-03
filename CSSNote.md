@@ -115,7 +115,7 @@ content（内容）就是盒子里装的东西，padding（内边距）就是怕
 
 <hr>
 
-**导航栏：**
+**导航栏：**https://www.w3school.com.cn/css/css_navbar_vertical.asp
 `list-style-type:none` 移除列表前小标志。一个导航栏并不需要列表标记。
 **块block导航栏：**
 `display:block` - 显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度
@@ -128,10 +128,16 @@ CSS 变量经常会定义在  :root  元素内，这样就可被所有选择器�
 
 <hr>
 
-
+**网格Grid ！！**
+css样式里 作为容器的大div里必须声明：
+	 display： grid; 
+	 grid-template-columns: auto 50px auto 20px;		/* 规定网格的列数以及宽度 */
+	 
+	  
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY4MjgyNzA4LDEwNzcwODMyODBdfQ==
+eyJoaXN0b3J5IjpbLTEwNDA0MzUzMDEsNTY4MjgyNzA4LDEwNz
+cwODMyODBdfQ==
 -->
