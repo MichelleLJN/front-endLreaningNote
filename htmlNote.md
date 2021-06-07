@@ -223,10 +223,132 @@ ep:
     Username: <input type="text" name="user">
     <input type="submit" value="Submit">
     </form>
+    
+[enter link description here](https://atts.w3cschool.cn/attachments/image/20201112/1605147193236568.png)
 
+表单验证：
+1、valueMissing
+
+目的：确保表单控件中的值已填写。
+用法：在表单控件中将required特性设置为true。
+示例：
+```
+<input type="text" name="myText" required>
+
+```
+
+详细说明：如果表单控件**设置了required特性**，那么在用户填写或者通过代码调用方式填值之前，控件会一直处于无效状态。例如，空的文本输入框无法通过必填检查，除非在其中输入任意文本。输入值为空时，valueMissing会返回true。
+
+2、typeMismatch
+
+目的：保证控件值与预期类型相匹配(如numbe、email、URL等).
+
+用法：指定表单控件的type特性值。
+
+示例：
+
+```
+<input type="email" name="myEmail">
+
+```
+
+详细说明：特殊的表单控件类型不只是用来定制手机键盘， 如果浏览器能够识别出来表单控件中的输入不符合对应的类型规则，比如email地址中没有@符号，或者number型控件的输入值不是有效的数字，那么浏览器就会把这个控件标记出来以提示类型不匹配。无论哪种出错情况，typeMismatch将返回true。
+
+3、patternMismatch
+
+目的：根据表单控件上设置的格式规则验证输入是否为有效格式。
+
+用法：在表单控件上设置pattern特性，井赋予适当的匹配规则。
+
+示例：
+
+```
+<input type="text" name="creditcardnumber" pattern="[0-9]{16}" title="A credit
+card number is 16 digits with no spaces or dashes">
+
+```
+
+详细说明：pattern特性向开发人员提供了一种强大而灵活的方式来为表单的控件值设定正则表达式验证机制。当为控件设置了pattern特性 后，只要输入控件的值不符合模式规则，patternMismatch就会返回true值。从引导用户和技术参考两方面考虑，你应该在包含pattern特性的表 单控件中设置title特性以说明规则的作用。
+
+4、tooLong
+
+目的：避免输入值包含过多字符。
+
+用法：在表单控件上设置maxLength特性。
+
+示例：
+
+```
+<input type="text" name="limitedText" maxLength="140">
+
+```
+
+详细说明：如果输入值的长度超过**maxLength**， tooLong特性会返回true。虽然表单控件通常会在用户输入时，限制最大长度，但在有些情况下，如通过程序设置，还是会超出最大值。
+
+5、rangeUnderflow
+
+目的：限制**数值型控件的最小值**。
+
+用法：为表单控件设置min特性，并赋予允许的最小值。
+
+示例：
+
+```
+<input type="range" name="ageCheck" min="18">
+
+```
+
+详细说明：在需要做数值范围检查的表单控件中，数值很可能会暂时低于设置的下限。此时，ValidityState的rangeUnderflow特性将返回true。
+
+6、rangeOverflow
+
+目的：限制**数值型控件的最大值**。
+
+用法：为表单控件设置max特性，并赋予允许的最大值。
+
+示例：
+
+```
+<input type="range" name="kidAgeCheck" max="12">
+
+```
+
+详细说明：与rangeUnderflow类似，如果一个表单控件的值比max更大，特性将返回true。
+
+7、stepMismatch
+
+目的：确保输入值符合min、max及step即设置。
+
+用法：为表单控件设置step特性，指定数值的增量。
+
+示例：
+
+```
+<input type="range" name="confidenceLevel" min="0" max="100" step="5">
+
+```
+
+详细说明：此约束条件用来保证数值符合min、max和step的要求。换句话说，当前值必须是最小值与step特性值的倍数之和。例如，范围从0到100，step特性值为5，此时就不允许出现17，否则stepMismatch返回true值。
+
+8、customError
+
+目的：处理应用代码明确设置及计算产生的错误。
+
+用法：调用setCustomValidity(message)将表单控件置于customError状态。
+
+示例：
+
+```
+passwordConfirmationField.setCustomValidity("Password values do not match.");
+
+```
+
+详细说明：浏览器内置的验证机制不适用时，需要显示自定义验证错误信息。当输入值不符合语义规则时，应用程序代码应设置这些自定义验证消息。
+
+自定义验证消息的典型用例是验证控件中的值是否一致。例如，密码和密码确认两个输人框的值不匹配。只要定制了验证消息，控件就会处于无效状态，并且customError返回true。要清除错误，只需在控件上调用setCustomValidity("")即可。
 > Written with [StackEdit](https://stackedit.io/).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTM1OTQ5NF19
+eyJoaXN0b3J5IjpbMTgxMTY5MTk0M119
 -->
