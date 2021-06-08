@@ -14,7 +14,11 @@ addEvenlistener:
 捕获中，外部元素的事件会先被触发，然后才会触发内部元素的事件，即： `<div>` 元素的点击事件先触发 ，然后再触发 <p> 元素的点击事件。
 `<script>`可以写到`<head><body>`里面，也可以外链文件`<script src="xxx.js"></script>`
 
+<hr>
+
+**作为对象属性的函数被称为 **方法**。**
+<hr>
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA5OTg1NTUyXX0=
+eyJoaXN0b3J5IjpbNDIxMTQ1ODkzLDYwOTk4NTU1Ml19
 -->
