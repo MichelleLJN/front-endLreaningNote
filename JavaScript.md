@@ -18,7 +18,10 @@ addEvenlistener:
 
 **作为对象属性的函数被称为 **方法**。**
 <hr>
+访问嵌套对象———可选链 `？` 符号
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIxMTQ1ODkzLDYwOTk4NTU1Ml19
+eyJoaXN0b3J5IjpbLTE3MTE0NTQwMzksNDIxMTQ1ODkzLDYwOT
+k4NTU1Ml19
 -->
