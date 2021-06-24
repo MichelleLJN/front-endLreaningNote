@@ -12,8 +12,9 @@
 
 字符串 转换 对象：eval（）
 `var gareen = eval("("+s3+")");`
-
+对象 转换 字符串：
+`var heroString = JSON.stringify(hero)`
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQ5MTYyNDEsNTQwMjMyNzg0XX0=
+eyJoaXN0b3J5IjpbNDMyMzUxNzE1LDU0MDIzMjc4NF19
 -->
