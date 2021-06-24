@@ -1,4 +1,5 @@
 对象：var xxxx={"name“:"xiaobao", "egg”:234 };
+
 数组：
 	var yyyy=
 	[
@@ -10,8 +11,10 @@
 字符串：
 	var s3=' {"name":"盖伦"  , "hp":616} ';
 
-字符串 转换 对象：eval( )  
+字符串 转换 对象：eval( ) 、 JSON.parse()
+`var myObj = JSON.parse(this.responseText);`
 `var gareen = eval("("+s3+")");`
+
 对象 转换 字符串： JSON.stringify( )
 `var xxxxString = JSON.stringify(xxxx);`
 
@@ -31,7 +34,7 @@ var xmlhttp = new XMLHttpRequest(); //创建 XMLHttpReques对象。
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTk4MzgzMDgsMTY3NzA4ODQxMiwtMz
-U1NDg3MDEyLC0xNzM0NzgzNTEyLC0xMTU5NTU4OTgwLDU0MDIz
-Mjc4NF19
+eyJoaXN0b3J5IjpbLTk4MTM5NTI1NSwxNjc3MDg4NDEyLC0zNT
+U0ODcwMTIsLTE3MzQ3ODM1MTIsLTExNTk1NTg5ODAsNTQwMjMy
+Nzg0XX0=
 -->
