@@ -24,11 +24,12 @@ JSON格式如何与JavaScript数据转换？
 var xmlhttp = new XMLHttpRequest(); //创建 XMLHttpReques对象。
  xmlhttp.onreadystatechange = function() { //设置响应函数 
  if (this.readyState == 4 && this.status == 200) { 
- myObj = JSON.parse(this.responseText); //responseText获得服务器发送的响应数据。 document.getElementById("demo").innerHTML = myObj.name; } }; 
+ myObj = JSON.parse(this.responseText); //responseText获得服务器发送的响应数据。 document.getElementById("demo").innerHTML = myObj.name;
+  } }; 
  xmlhttp.open("GET", "json_demo.txt", true);//设置访问页面 xmlhttp.send()；//send一般要包含要发送的数据。
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMjIzNjgyNiwtMTE1OTU1ODk4MCw1ND
+eyJoaXN0b3J5IjpbMTM3MDU0MzAzNCwtMTE1OTU1ODk4MCw1ND
 AyMzI3ODRdfQ==
 -->
