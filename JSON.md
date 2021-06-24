@@ -8,7 +8,7 @@
 ]
 
 字符串：
-	var s3=" {\"name\":\"盖伦\"  , \"hp\":616}";
+	var s3=' {\"name\":\"盖伦\"  , \"hp\":616} ';
 
 字符串 转换 对象：eval( )
 `var gareen = eval("("+s3+")");`
@@ -31,6 +31,6 @@ var xmlhttp = new XMLHttpRequest(); //创建 XMLHttpReques对象。
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzQ3ODM1MTIsLTExNTk1NTg5ODAsNT
-QwMjMyNzg0XX0=
+eyJoaXN0b3J5IjpbLTM1NTQ4NzAxMiwtMTczNDc4MzUxMiwtMT
+E1OTU1ODk4MCw1NDAyMzI3ODRdfQ==
 -->
