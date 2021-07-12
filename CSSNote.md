@@ -120,7 +120,12 @@ content（内容）就是盒子里装的东西，padding（内边距）就是怕
 **块block导航栏：**
 `display:block` - 显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度
 **水平导航栏**：
-display:inline; 
+1. display:inline; （inline-block） //**会出现间距，可删掉li标签间的空格or回车，或加注释** [麻烦不大好使]
+2. 
+	li {float:left;}
+	a {display:block;}
+
+侧边悬停工具例子：https://www.jianshu.com/p/d18352b366b5
 <hr>
 CSS 变量经常会定义在  :root  元素内，这样就可被所有选择器继承。
 
@@ -133,11 +138,12 @@ css样式里 作为容器的大div里必须声明：
 	 display： grid; 
 	 grid-template-columns: auto 50px auto 20px;		/* 规定网格的列数以及宽度 */
 	 
-	  
+	 图片居中方法：
+	 https://www.w3cschool.cn/css/css-center2.html
 
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDA0MzUzMDEsNTY4MjgyNzA4LDEwNz
-cwODMyODBdfQ==
+eyJoaXN0b3J5IjpbLTE4MDkxOTQ1MjQsLTEwNDA0MzUzMDEsNT
+Y4MjgyNzA4LDEwNzcwODMyODBdfQ==
 -->
