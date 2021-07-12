@@ -141,9 +141,11 @@ css样式里 作为容器的大div里必须声明：
 	 图片居中方法：
 	 https://www.w3cschool.cn/css/css-center2.html
 
+**居中！！！**：
+https://mp.weixin.qq.com/s/DNrHtni1Wyzv99mOJlPA_w
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDkxOTQ1MjQsLTEwNDA0MzUzMDEsNT
-Y4MjgyNzA4LDEwNzcwODMyODBdfQ==
+eyJoaXN0b3J5IjpbMTI3MDkxOTc2NCwtMTgwOTE5NDUyNCwtMT
+A0MDQzNTMwMSw1NjgyODI3MDgsMTA3NzA4MzI4MF19
 -->
