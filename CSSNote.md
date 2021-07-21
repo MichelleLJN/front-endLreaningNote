@@ -143,9 +143,16 @@ css样式里 作为容器的大div里必须声明：
 
 **居中！！！**：
 https://mp.weixin.qq.com/s/DNrHtni1Wyzv99mOJlPA_w
+
+清除浮动;
+例子：
+https://www.cnblogs.com/Ry-yuan/p/6816290.html
+https://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html
+
 > Written with [StackEdit](https://stackedit.io/).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MDkxOTc2NCwtMTgwOTE5NDUyNCwtMT
-A0MDQzNTMwMSw1NjgyODI3MDgsMTA3NzA4MzI4MF19
+eyJoaXN0b3J5IjpbMjE2NDM3MDEyLDEyNzA5MTk3NjQsLTE4MD
+kxOTQ1MjQsLTEwNDA0MzUzMDEsNTY4MjgyNzA4LDEwNzcwODMy
+ODBdfQ==
 -->
